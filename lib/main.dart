@@ -1,6 +1,6 @@
-import 'package:fininfocom_task/data_view_model.dart';
-import 'package:fininfocom_task/home_screen.dart';
-import 'package:fininfocom_task/splash_screen.dart';
+import 'package:fininfocom_task/view_models/data_view_model.dart';
+import 'package:fininfocom_task/screens/home_screen.dart';
+import 'package:fininfocom_task/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -22,8 +22,8 @@ class FinInfoComTask extends StatelessWidget {
       ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeScreen()
-        // home: Splash()
+        // home: HomeScreen()
+        home: Splash()
       ),
     );
   }
